@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Set New Password</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+    }
+
+    /* Background */
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #007f7f, #00a3a3);
+    }
+
+    /* Card */
+    .reset-card {
+      width: 340px;
+      padding: 32px 28px;
+      background: rgba(255, 255, 255, 0.18);
+      border-radius: 18px;
+      text-align: center;
+      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(8px);
+    }
+
+    /* Heading */
+    .reset-card h2 {
+      color: #fff;
+      margin-bottom: 28px;
+      letter-spacing: 0.8px;
+    }
+
+    /* Inputs */
+    .reset-card input {
+      width: 100%;
+      padding: 13px;
+      margin-bottom: 18px;
+      border: none;
+      border-radius: 9px;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .reset-card input:focus {
+      box-shadow: 0 0 7px rgba(255, 255, 255, 0.9);
+    }
+
+    /* Button */
+    .reset-card button {
+      width: 100%;
+      padding: 13px;
+      margin-top: 10px;
+      border-radius: 9px;
+      border: none;
+      background: #ffffff;
+      color: #007f7f;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .reset-card button:hover {
+      background: transparent;
+      color: #fff;
+      border: 1px solid #fff;
+    }
+
+    .reset-card button:active {
+      transform: scale(0.96);
+    }
+
+    /* Mobile */
+    @media (max-width: 480px) {
+      .reset-card {
+        width: 95%;
+        padding: 26px;
+      }
+
+      .reset-card h2 {
+        font-size: 20px;
+      }
+    }
+  </style>
+
+</head>
+<body>
+    
+
+  <div class="reset-card">
+    <h2>Set New Password</h2>
+
+    <form>
+      <input type="password" placeholder="New Password" required>
+      <input type="password" placeholder="Confirm Password" required>
+
+      <button type="submit">Change Password</button>
+    </form>
+    <p style="margin-top:15px;">
+  <a href="login.html" style="color:#fff; text-decoration:none;">Back to Login</a>
+</p>
+
+  </div>
+
+</body>
+</html>

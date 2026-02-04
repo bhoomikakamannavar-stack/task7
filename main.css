@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+/* Background */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #007f7f, #009999);
+}
+
+/* Card */
+.login-card {
+  width: 330px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+}
+
+/* Heading */
+.login-card h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+/* Inputs */
+.login-card input[type="text"],
+.login-card input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.login-card input:focus {
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.9);
+}
+
+/* Options */
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #fff;
+  margin-bottom: 18px;
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.options a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.85;
+}
+
+.options a:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #ffffff;
+  color: #007f7f;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+/* Register Text */
+.register-text {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #fff;
+}
+
+.register-text a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}
